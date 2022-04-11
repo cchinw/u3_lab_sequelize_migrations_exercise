@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false
       },
-      phoneNmber: {
+      phoneNumber: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     {
+      freezeTableName: true,
       sequelize,
       modelName: 'Business',
       tableName: 'businesses'
